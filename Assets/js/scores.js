@@ -9,12 +9,12 @@ function printHighscores() {
   
     highscores.forEach(function(score) {
       // Creates list tag
-      let liTag = document.createElement("li");
-      liTag.textContent = score.initials + " - " + score.score;
+      let liElement = document.createElement("li");
+      liElement.textContent = score.initials + " - " + score.score;
   
       // Display
-      let olEl = document.getElementById("highscores");
-      olEl.appendChild(liTag);
+      let olElement = document.getElementById("highscores");
+      olElement.appendChild(liElement);
     });
   }
   
